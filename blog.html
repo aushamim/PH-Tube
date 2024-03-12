@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube: Blog</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="w-[90%] lg:w-[80%] mx-auto">
+    <nav class="grid grid-cols-3 items-center pt-5 gap-3">
+      <a href="./index.html">
+        <img class="w-full lg:w-2/5" src="./assets/Logo.png" alt="logo" />
+      </a>
+      <div></div>
+      <div class="flex justify-end">
+        <a
+          href="./index.html"
+          class="btn btn-sm lg:btn-md uppercase btn-error text-white"
+        >
+          Return to Home
+        </a>
+      </div>
+    </nav>
+    <div class="divider"></div>
+
+    <section>
+      <div class="collapse collapse-arrow bg-gray-100 rounded-lg mb-5">
+        <input type="radio" name="blog-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          Discuss the scope of
+          <span class="bg-gray-200 px-1 rounded font-mono">var</span>,
+          <span class="bg-gray-200 px-1 rounded font-mono">let</span>, and
+          <span class="bg-gray-200 px-1 rounded font-mono">const</span>
+        </div>
+        <div class="collapse-content">
+          <hr class="mb-3" />
+          <div class="text-justify">
+            <h1
+              class="text-2xl font-semibold underline underline-offset-2 mb-3"
+            >
+              VAR
+            </h1>
+            <p>
+              <span class="font-semibold">Function Scope: </span>Variables
+              declared with
+              <span class="bg-gray-200 px-1 rounded font-mono">var</span> are
+              function-scoped. They are only accessible within the function
+              where they are defined.
+            </p>
+            <p class="mt-2">
+              <span class="font-semibold">Hoisting: </span> Variables declared
+              with
+              <span class="bg-gray-200 px-1 rounded font-mono">var</span> are
+              hoisted to the top of their containing function or global scope,
+              meaning they can be used before they are declared, but they will
+              be initialized with undefined until their actual declaration.
+            </p>
+          </div>
+
+          <hr class="my-3" />
+          <div class="text-justify">
+            <h1
+              class="text-2xl font-semibold underline underline-offset-2 mb-3"
+            >
+              LET
+            </h1>
+            <p>
+              <span class="font-semibold">Block Scope: </span>Variables declared
+              with
+              <span class="bg-gray-200 px-1 rounded font-mono">let</span> are
+              block-scoped, meaning they are accessible only within the block
+              where they are defined. A block can be a function, loop, or any
+              code enclosed in curly braces
+              <span class="bg-gray-200 px-1 rounded font-mono">{}</span>.
+            </p>
+            <p class="mt-2">
+              <span class="font-semibold">Hoisting: </span> Variables declared
+              with
+              <span class="bg-gray-200 px-1 rounded font-mono">let</span> are
+              also hoisted to the top of their containing block like
+              <span class="bg-gray-200 px-1 rounded font-mono">var</span>, but
+              they are not initialized and cannot be used before their
+              declaration.
+            </p>
+          </div>
+
+          <hr class="my-3" />
+          <div class="text-justify">
+            <h1
+              class="text-2xl font-semibold underline underline-offset-2 mb-3"
+            >
+              CONST
+            </h1>
+            <p>
+              <span class="font-semibold">Block Scope: </span>Like
+              <span class="bg-gray-200 px-1 rounded font-mono">let</span>,
+              <span class="bg-gray-200 px-1 rounded font-mono">const</span> is
+              also block-scoped.
+            </p>
+            <p class="mt-2">
+              <span class="font-semibold">Mutability: </span> Variables declared
+              with
+              <span class="bg-gray-200 px-1 rounded font-mono">const</span> are
+              meant to be constants, and their value cannot be reassigned after
+              initialization. However, for objects and arrays declared with
+              const, their properties or elements can be modified. The variable
+              itself cannot be reassigned.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-gray-100 rounded-lg mb-5">
+        <input type="radio" name="blog-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          Tell us the use cases of
+          <span class="bg-gray-200 px-1 rounded font-mono">null</span> and
+          <span class="bg-gray-200 px-1 rounded font-mono">undefined</span>
+        </div>
+        <div class="collapse-content">
+          <hr class="mb-3" />
+          <div class="text-justify">
+            <h1
+              class="text-2xl font-semibold underline underline-offset-2 mb-3"
+            >
+              null
+            </h1>
+            <p>
+              <span class="bg-gray-200 px-1 rounded font-mono">null</span> is a
+              value that represents the intentional absence of any value. It is
+              typically used to indicate that a variable or property should have
+              no value or that it has been intentionally cleared. It can also be
+              used as a placeholder or initial value that might be assigned a
+              value later in your code. Some functions or methods may return
+              null to indicate that they did not find a meaningful result.
+            </p>
+          </div>
+
+          <hr class="my-3" />
+          <div class="text-justify">
+            <h1
+              class="text-2xl font-semibold underline underline-offset-2 mb-3"
+            >
+              undefined
+            </h1>
+            <p>
+              In JavaScript, variables that have been declared but have not been
+              assigned a value are automatically initialized with
+              <span class="bg-gray-200 px-1 rounded font-mono">undefined</span>.
+              So,
+              <span class="bg-gray-200 px-1 rounded font-mono">undefined</span>
+              is often used as the default value for function parameters and
+              variables. If an object value is accessed that does not exist or
+              an array element is accessed that is beyond the length of the
+              array or if a function does not explicitly return a value, it will
+              return
+              <span class="bg-gray-200 px-1 rounded font-mono">undefined</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-gray-100 rounded-lg mb-5">
+        <input type="radio" name="blog-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          What do you mean by REST API?
+        </div>
+        <div class="collapse-content">
+          <hr class="mb-3" />
+          <div class="text-justify">
+            <h1
+              class="text-2xl font-semibold underline underline-offset-2 mb-3"
+            >
+              REST API
+            </h1>
+            <p>
+              A
+              <span class="bg-gray-200 px-1 rounded font-mono">REST API</span>
+              is an application programming interface that adheres to the
+              constraints of REST architectural style and enables interaction
+              with RESTful web services. Interconnected networks make up the
+              web. A web service is a set of open protocols and standards used
+              for exchanging data between client-server applications. Web
+              services that follow the REST architecture are known as RESTful
+              web services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
